@@ -8,8 +8,8 @@ local VirtualInputManager = game:GetService("VirtualInputManager")
 -- 1. CONFIGURATION
 -- REPLACE THESE URLs with your "Raw" GitHub links once you upload the files
 local REPO_URL = "https://raw.githubusercontent.com/opjladdad-bot/roblox-wordle-solver/main/"
-local LIST_URL = REPO_URL .. "https://raw.githubusercontent.com/opjladdad-bot/roblox-wordle-solver/refs/heads/main/WordList.lua"
-local SOLVER_URL = REPO_URL .. "https://raw.githubusercontent.com/opjladdad-bot/roblox-wordle-solver/refs/heads/main/WordleSolver.lua"
+local LIST_URL = "https://raw.githubusercontent.com/opjladdad-bot/roblox-wordle-solver/refs/heads/main/WordList.lua"
+local SOLVER_URL = "https://raw.githubusercontent.com/opjladdad-bot/roblox-wordle-solver/refs/heads/main/WordleSolver.lua"
 
 -- 2. LOAD MODULES
 local success, WordList = pcall(function() return loadstring(game:HttpGet(LIST_URL))() end)
